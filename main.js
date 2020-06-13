@@ -7,17 +7,17 @@
 
 function save() {
   localStorage.setItem('cookies', JSON.stringify(cookies));
-  localStorage.setItem('clicker_level', JSON.stringify(clicker));
+  localStorage.setItem('clicker_level', JSON.stringify(clicker_level));
 localStorage.setItem('score', JSON.stringify(score));
-localStorage.setItem('baker', JSON.stringify(baker));
+localStorage.setItem('baker_enabled', JSON.stringify(bakery_enabled));
 
 }
 
 function load() {
   player = JSON.parse(localStorage.getItem('cookies'));
-  clicker_level = JSON.parse(localStorage.getItem('clicker'));
-      score = JSON.parse(localStorage.getItem('score'));
-      baker = JSON.parse(localStorage.getItem('baker'));
+  clicker_level = JSON.parse(localStorage.getItem('clicker_level'));
+ score = JSON.parse(localStorage.getItem('score'));
+bakery_enabled = JSON.parse(localStorage.getItem('baker_enabled'));
 
 }
 
