@@ -8,14 +8,16 @@
 function save() {
   localStorage.setItem('cookies', JSON.stringify(cookies));
   localStorage.setItem('clicker_level', JSON.stringify(clicker_level));
-localStorage.setItem('baker_enabled', JSON.stringify(bakery_enabled));
+localStorage.setItem('bakery_enabled', JSON.stringify(bakery_enabled));
+localStorage.setItem('baker_enabled', JSON.stringify(baker_enabled));
 
 }
 
 function load() {
-  player = JSON.parse(localStorage.getItem('cookies'));
+  cookies = JSON.parse(localStorage.getItem('cookies'));
   clicker_level = JSON.parse(localStorage.getItem('clicker_level'));
 baker_enabled = JSON.parse(localStorage.getItem('baker_enabled'));
+bakery_enabled = JSON.parse(localStorage.getItem('bakery_enabled'));
 
 }
 
