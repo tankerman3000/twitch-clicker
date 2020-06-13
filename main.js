@@ -8,11 +8,17 @@
 function save() {
   localStorage.setItem('cookies', JSON.stringify(cookies));
   localStorage.setItem('clicker_level', JSON.stringify(clicker));
+localStorage.setItem('score', JSON.stringify(score));
+localStorage.setItem('baker', JSON.stringify(baker));
+
 }
 
 function load() {
-  cookies = JSON.parse(localStorage.getItem('cookies'));
+  player = JSON.parse(localStorage.getItem('cookies'));
   clicker_level = JSON.parse(localStorage.getItem('clicker'));
+      score = JSON.parse(localStorage.getItem('score'));
+      baker = JSON.parse(localStorage.getItem('baker'));
+
 }
 
 class Clicker
@@ -34,8 +40,6 @@ class Clicker
 		cookies += this.get_production_value();
 		cookies_produced += this.get_production_value();
 		renew_cookies();
-		save();
-
 	}
 
 	get_production_value()
@@ -217,5 +221,3 @@ cookie_gigant = new Building("Platform Domination", 10000, 200000);
 
 setInterval(renew_cookies, 500);
 
-
-    
