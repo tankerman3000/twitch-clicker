@@ -13,7 +13,8 @@ localStorage.setItem('baker_enabled', JSON.stringify(baker_enabled));
 localStorage.setItem('cookies_produced', JSON.stringify(cookies_produced));
 localStorage.setItem('level', JSON.stringify(level));
 localStorage.setItem('altogether_productivity', JSON.stringify(altogether_productivity));
-
+localStorage.setItem('Clicker.level', JSON.stringify(Clicker.level));
+    Clicker.level = JSON.parse(localStorage.getItem('Clicker.level'));
 
 
 }
@@ -26,6 +27,7 @@ bakery_enabled = JSON.parse(localStorage.getItem('bakery_enabled'));
 cookies_produced = JSON.parse(localStorage.getItem('cookies_produced'));
 level = JSON.parse(localStorage.getItem('level'));
 altogether_productivity = JSON.parse(localStorage.getItem('altogether_productivity'));
+    Clicker.level = JSON.parse(localStorage.getItem('Clicker.level'));
 
 }
 
