@@ -14,7 +14,6 @@ localStorage.setItem('cookies_produced', JSON.stringify(cookies_produced));
 localStorage.setItem('level', JSON.stringify(level));
 localStorage.setItem('altogether_productivity', JSON.stringify(altogether_productivity));
 localStorage.setItem('Clicker.level', JSON.stringify(Clicker.level));
-    Clicker.level = JSON.parse(localStorage.getItem('Clicker.level'));
 
 
 }
