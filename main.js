@@ -31,6 +31,8 @@ class Clicker
 		this.level_display = document.getElementById("clicker_level");
 		this.price_display = document.getElementById("clicker_price");
 		this.productivity_display = document.getElementById("clicker_productivity");
+		
+		this.save();
 
 		this.renew_display();
 	}
@@ -40,6 +42,7 @@ class Clicker
 		cookies += this.get_production_value();
 		cookies_produced += this.get_production_value();
 		renew_cookies();
+		save();
 	}
 
 	get_production_value()
