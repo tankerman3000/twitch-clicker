@@ -32,8 +32,6 @@ class Clicker
 		this.price_display = document.getElementById("clicker_price");
 		this.productivity_display = document.getElementById("clicker_productivity");
 		
-		this.save();
-
 		this.renew_display();
 	}
 
