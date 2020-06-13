@@ -5,6 +5,16 @@
 
 // classes
 
+function save() {
+  localStorage.setItem('cookies', JSON.stringify(cookies));
+  localStorage.setItem('clicker_level', JSON.stringify(clicker));
+}
+
+function load() {
+  player = JSON.parse(localStorage.getItem('cookies'));
+  score = JSON.parse(localStorage.getItem('clicker'));
+}
+
 class Clicker
 {
 	constructor()
@@ -204,4 +214,6 @@ cookie_tesla = new Building("Extra Channel", 1000, 20000);
 cookie_gigant = new Building("Platform Domination", 10000, 200000);
 
 setInterval(renew_cookies, 500);
+
+
     
