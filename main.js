@@ -34,7 +34,7 @@ class Clicker
 		cookies += this.get_production_value();
 		cookies_produced += this.get_production_value();
 		renew_cookies();
-		  localStorage.setItem('cookies', JSON.stringify(cookies));
+		save();
 
 	}
 
