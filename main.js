@@ -11,6 +11,7 @@ function save() {
 localStorage.setItem('bakery_enabled', JSON.stringify(bakery_enabled));
 localStorage.setItem('baker_enabled', JSON.stringify(baker_enabled));
 localStorage.setItem('cookies_produced', JSON.stringify(cookies_produced));
+localStorage.setItem('level', JSON.stringify(level));
 
 
 }
@@ -21,6 +22,7 @@ function load() {
 baker_enabled = JSON.parse(localStorage.getItem('baker_enabled'));
 bakery_enabled = JSON.parse(localStorage.getItem('bakery_enabled'));
 cookies_produced = JSON.parse(localStorage.getItem('cookies_produced'));
+level = JSON.parse(localStorage.getItem('level'));
 
 }
 
