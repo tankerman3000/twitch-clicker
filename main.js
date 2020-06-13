@@ -11,8 +11,8 @@ function save() {
 }
 
 function load() {
-  player = JSON.parse(localStorage.getItem('cookies'));
-  score = JSON.parse(localStorage.getItem('clicker'));
+  cookies = JSON.parse(localStorage.getItem('cookies'));
+  clicker_level = JSON.parse(localStorage.getItem('clicker'));
 }
 
 class Clicker
