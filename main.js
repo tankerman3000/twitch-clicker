@@ -12,6 +12,8 @@ localStorage.setItem('bakery_enabled', JSON.stringify(bakery_enabled));
 localStorage.setItem('baker_enabled', JSON.stringify(baker_enabled));
 localStorage.setItem('cookies_produced', JSON.stringify(cookies_produced));
 localStorage.setItem('level', JSON.stringify(level));
+localStorage.setItem('altogether_productivity', JSON.stringify(altogether_productivity));
+
 
 
 }
@@ -23,6 +25,7 @@ baker_enabled = JSON.parse(localStorage.getItem('baker_enabled'));
 bakery_enabled = JSON.parse(localStorage.getItem('bakery_enabled'));
 cookies_produced = JSON.parse(localStorage.getItem('cookies_produced'));
 level = JSON.parse(localStorage.getItem('level'));
+altogether_productivity = JSON.parse(localStorage.getItem('altogether_productivity'));
 
 }
 
